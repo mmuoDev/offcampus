@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/menu.css" rel="stylesheet">
+
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/script.js"  type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+<script>
+$('#confirm-delete').on('show.bs.modal', function(e) {
+$(this).find('.danger').attr('', $(e.relatedTarget).data('href'));
+});
+</script>
+
+<script>
+$(function() {
+  $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yyyy' });
+});
+</script>

@@ -1,0 +1,657 @@
+body {
+      font-family: Montserrat, Lato;
+      font-size: 20px;
+      font-weight: 300;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .glyphicon.glyphicon-phone {
+      color:#287cba;
+      font-size: .9em;
+    }
+    @media screen and (max-width: 768px){
+     .glyphicon.glyphicon-phone { 
+      font-size: 1.8em;
+      top: 12px;
+      }
+    }
+    .navbar-collapse {
+      padding-left: 18px;
+    }
+    .navbar-default .navbar-toggle {
+      border:none;
+      border-radius: 2px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #287cba;
+      width: 25px;
+    }
+    .navbar-default {
+      background-color:white;
+    }
+    
+    /*.navbar-brand, .size a:link {
+      font-size: 18px;
+      text-transform: uppercase;
+    }*/
+/*
+    .navbar-brand a {
+      margin-left: 2px;
+    }
+*/
+    a.navbar-brand, a.navbar-text {
+      font-size: .8em;
+    }
+/*
+    div#mynavbar ul li > a:first-child  {
+      margin-top: -6px;
+    }
+*/
+
+/*
+    div#mynavbar ul li:first-child {
+      border: 1px solid black;
+      height: 40px;
+      border-radius: 10%;
+      padding: 0 5px !important;
+      margin-top: 6px !important;
+    }
+    
+*/
+      
+/* Start Nav bar right side styling*/
+    
+    div#mynavbar ul > li  {
+      font-size: .7em;
+      max-height: inherit;
+    }
+
+    div#mynavbar ul > li:hover  {
+      border-bottom: 2px solid #0d0dc1;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .navbar-toggle {
+        margin-right: 30px;
+      }
+      div#mynavbar ul > li:hover  {
+        border-bottom: none;
+  
+      }
+    }
+    div#mynavbar ul > li:last-child:hover  {
+      border-bottom: none;
+    }
+    
+    div#mynavbar ul button {
+      background-color: #0d0dc1;
+      border: none;
+      margin-top: 8px;
+      margin-right: 6px;
+      padding: 3px 15px;
+      box-shadow: 0 2px 2px 0 #090979;
+    }
+    div#mynavbar ul button a  {
+      color: white;
+    }
+    div#mynavbar ul button:hover, div#mynavbar button a:hover  {
+      background-color:#05059d;
+      text-decoration: none;
+    }   
+/*
+    .size ul li {
+      font-size: .4em !important;
+    }
+*/
+    
+/* End Nav bar right side styling*/
+    
+/*----------------------------------------------------   */
+    
+/* start search section styling */
+    
+    .jumbotron.search {
+      background-color: #1c1201;
+      background:  url("http://localhost/offcampus/img/home.jpg") no-repeat;
+      background-position-x: 50%;
+	  background-position-y: 50%;
+      background-size: cover;
+      height: 27em;
+    }
+	.header, .color h2 {
+        /*margin-top: 2em;*/
+		color: white;
+		font-size: 2.1em;
+	}
+    
+/* Small screen optimization   */
+    
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .color h2 {
+        font-size: 1.5em;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+      }
+      .color h2 span[class^="br"]{
+        display: block;
+      }
+      a.navbar-brand, a.navbar-text, span[class^="badge"]{
+        font-size: .7em;
+      }
+    }
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .navbar-form {
+        padding: 10px 25px;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+      select {
+        margin-bottom: 5px;
+      }
+      .input-lg, .form-control {
+        border-radius: 0;
+        font-size: .75em;
+      }
+      .input-lg {
+        padding: 10px 5px;
+      }
+    }
+    @media (min-width: 768px){
+      .navbar-form .form-control {
+        width: 16em !important;
+     }
+    }
+/*start search form styling // other buttons design as well*/
+    
+/*
+    @media screen and (min-width:320px) and (max-width: 768px){
+      .searchbox {
+        width:20em;
+        height:6em;
+      }
+      .col-sm-* {
+        height: 2em;
+        max-width: 30px;
+        
+      }
+    }
+*/  
+    .searchbox {
+      margin: 45px 260px 0 260px;
+      border-radius: 2px;
+/*      height: 7em;*/
+      background-color:rgba(255,255,255,0.35);
+/*      position:relative;*/
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+    .search-btn, .learnmore-btn,.property-list  {
+      margin-top: .5em;
+      border-radius: 25px !important;
+      border: 1px solid;
+      /**
+      background-color:#0d0dc1;
+      color: white;
+      **/
+      width: auto;
+      /*border: 1px solid green;*/
+    }
+    .input-lg {
+        font-size: .75em !important;
+        padding: 10px 0;
+      }
+    .btn.search-btn:hover,.learnmore-btn:hover {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      background-color: rgba(13, 13, 193, 0.7);
+    }
+    @media screen and (max-width: 768px){
+      .searchbox {
+        margin: 45px 18px 0 18px; 
+      }
+      .search-btn {
+        margin-top: -1em;
+      }
+      .btn-lg {
+        padding: 10px 46px;
+      }
+    }
+/*
+    .form-group.select-uni, .form-group.acmd-type, .form-group.price-range  {
+      width: 100%;
+    }
+*/
+    .container-row {
+      margin-top: 1em;
+      /*border: 1px solid black;*/
+    }
+    .form-size {
+      height: 3.5em;
+      max-width: 100%;
+    }
+    .glyph-pad {
+      padding-right: .5em;
+    }
+/*start search form styling // other buttons design as well*/
+/* start search section styling */
+
+/*----------------------------------------------------   */
+
+/*Start How it works section styling*/
+    
+    .container.howitworks {
+      margin-top: -3em;
+/*     border: 1px solid green;*/
+    }
+    .jumbotron.howitworks {
+      background-color: white;
+      height: auto; 
+      /*border: 1px solid blue;*/
+    }
+    .row-head h2 {
+      position: relative;
+      margin: 1em 0;
+      padding: 0;
+    }
+    
+    /*how it works h2 side line styling*/
+    
+    .row-head h2::before,.row-head h2::after{
+      content:"";
+      display: inline-block;
+      height: 1px;
+      width: 12em;
+      background-color: #848484;
+    }
+    .row-head h2::before {
+      position:absolute;
+      top: 15px;
+      left: .2em;
+    }
+    .row-head h2::after {
+      position:absolute;
+      top: 15px;
+      right: .2em;
+    }
+    
+    /* Small screen optimization   */
+    
+    @media screen and (max-width: 768px) and (min-width:320px) {
+     .row-head h2 {
+        position: relative;
+        font-size: .9em;
+        margin: 1em 0;
+        padding: 0;
+      }
+      .row-head h2::before,.row-head h2::after {
+        content:"";
+        display: inline-block;
+        height: 1px;
+        width: 5em;
+        background-color: #848484;
+      }
+      .row-head h2::before {
+        position:absolute;
+        top: 8px;
+        left: .1em;
+      }
+      .row-head h2::after {
+        position:absolute;
+        top: 8px;
+        right: .1em;
+      }
+    }
+    
+    /* End Small screen optimization for h2 */
+    
+    .fa.howitworks {
+      font-size: 4em;
+      cursor: pointer;
+      padding: .3em;
+       color:#5cb85c;
+    }
+    .fa.howitworks:hover {
+      font-size: 4.03em;
+       color:#5cb85c;
+    }
+    
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .fa.howitworks {
+        font-size: 2em;
+      }
+      .fa.howitworks:hover {
+        font-size: 2em !important;
+        color: #5cb85c;
+      }
+    }
+    div.howitworks p {
+      font-size: .99em;
+      font-weight:200;
+      font-family:proxima-nova;
+      line-height:1.2em;
+    }
+    div.howitworks h3 {
+      font-family: proxima-nova;
+      font-size: 1.04em;
+      line-height: 1.5em;
+      margin-top: -10px;
+      padding: 0;
+    }
+    /* Small screen optimization   */
+    
+    @media screen and (max-width: 768px) and (min-width:320px){
+      div.howitworks h3 {
+        font-size: .85em;
+        line-height: 1.2em;
+        margin-top: -18px;
+        padding: 0;
+      } 
+      div.howitworks h3 span[class^="br"] {
+        display: block;
+      }
+      div.howitworks p {
+        font-size: .8em;
+        line-height:1em;
+      }
+    }
+  /* End Small screen optimization   */
+/*End How it works section styling*/
+    
+/*----------------------------------------------------   */
+    
+/*start landlords benefit section styling*/
+    
+
+    .row-head.lanlords h2::before {
+      position:absolute;
+      top: 15px;
+      left: 3.2em;
+    }
+    .row-head.lanlords h2::after {
+      position:absolute;
+      top: 15px;
+      right: 3.2em;
+    } 
+    
+/* Small screen optimization   */
+    
+    @media screen and (max-width: 768px) and (min-width:320px)  {
+      .row-head.lanlords h2::before {
+        position:absolute;
+        top: 8px;
+        left: .6em !important;
+      }
+      .row-head.lanlords h2::after {
+        position:absolute;
+        top: 8px;
+        right: .6em !important;
+      }
+      .row-head.lanlords h2   {
+        font-size: .8em;
+      }
+    }
+    .row-head.lanlords h2 {
+      color: white;
+/*    border: 1px solid green;*/
+      margin-top: -.5em;
+      margin-bottom: 2em;
+    }
+    .jumbotron.lanlords {
+      background: url("http://localhost/offcampus/img/blushade.jpg") no-repeat center #6b6b6b;
+      background-position-x: 70%;
+	  background-position-y: 30%;
+      background-size: cover;
+    }
+    .fa-gift, .fa-tachometer, .fa-briefcase {
+      font-size: 4em;
+      padding: .3em;
+      cursor: pointer;
+      color:#e8f5ff;
+    }
+    .panel.stress {
+      background-color: #008e00;
+    }
+    .panel.renting  {
+      background-color: brown;
+    }
+    .panel.management {
+      background-color: #40348e;
+    }
+    .panel h3, .panel p {
+      color: white;
+      font-weight: lighter;
+    }
+    .panel p {
+      font: 20px proxima-nova;
+    }
+    .panel h3 {
+      color: #c7f0f2;
+    }
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .panel h3 {
+        font-size: 1em;
+      }
+    }
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .fa-gift, .fa-tachometer, .fa-briefcase {
+        font-size: 3.5em;
+        padding: .2em;
+      }
+      .panel {
+        margin-bottom: 45px;
+        border: none;
+        border-radius: 0;
+      }
+      .panel p  {
+        font: .92em proxima-nova;
+      }
+    }
+/*End landlords benefit section styling*/
+    
+/*----------------------------------------------------   */
+
+/*Start Get started section styling*/
+    
+    .getstarted.row-head h2::before {
+      position:absolute;
+      top: 30px;
+      left: 6em;
+    }
+    .getstarted.row-head h2::after {
+      position:absolute;
+      top: 30px;
+      right: 6em;
+    }
+    
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .getstarted.row-head h2::before {
+        position:absolute;
+        top: 16px !important;
+        left: 2em !important;
+    }
+    .getstarted.row-head h2::after {
+        position:absolute;
+        top: 16px !important;
+        right: 2em !important;
+      }
+    }
+    div.jumbotron.getstarted {
+      position: relative;
+      background-color: white;
+      margin: 0;
+      padding: 0 0 25px 0;
+      margin-top: -10px;
+      /*border: 1px solid chocolate;*/
+    }
+    .jumbotron.getstarted .row-head h2 {
+      padding: .5em 0;
+    }
+    .jumbotron.getstarted button {
+      margin-top: 2em;
+    }
+    .property-list:hover  {
+       /**
+      background-color: #05059d;
+      color:white;
+       **/
+    }
+    .getstarted p {
+      font: 1em lato;
+    }
+    @media screen and (max-width: 768px) and (min-width:320px) {
+      .getstarted p {
+        font-size:.84em;
+      }
+      .btn-lg {
+        font-size: 14px;
+      }
+    }
+/*End Get started section styling*/
+    
+/*----------------------------------------------------   */
+
+/*Start social link section styling*/
+    
+    .jumbotron.social-links > p {
+      font-size: .8em;
+    }
+    .jumbotron.social-links {
+    }
+    div.jumbotron.social-links {
+      height: 3.8em;
+      /*border: 1px solid yellow;*/
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron.social-links div.row {
+      margin: 0;
+      margin-top: -1.2em;
+    }
+    .jumbotron.social-links div ul {
+      /*border: 1px dashed green;
+      margin: 0;*/
+      padding: 5px 0;                   /*padding the social link row */
+    }
+    .jumbotron.social-links div ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 1.2em 1em;
+    }
+    .jumbotron.social-links div li i {
+      border-radius: 30%;
+      font-size: 1.3em;
+      padding: .3em;
+      color: white;
+      width: 1.5em;
+/*      background-color: rgba(64, 96, 165, 0.64);*/
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram  {
+      background-color:#adadad; 
+    }
+    .fa-facebook:hover{background-color: #4060A5;} .fa-twitter:hover {background-color:#55acee;} .fa-linkedin:hover{background-color:#0077b5;} .fa-instagram:hover{background-color:#405de6; }
+    
+    @media screen and (max-width: 768px) {
+      .jumbotron.social-links div li i {
+        font-size: 1.1em;
+      }
+      .jumbotron.social-links div ul li {
+        padding: 1.36em .65em;
+      }
+      .fa-facebook{background-color: #4060A5;} .fa-twitter{background-color:#55acee;}
+      .fa-linkedin{background-color:#0077b5;} .fa-instagram{background-color:#405de6;}
+    }
+/*End social link section styling*/
+
+/*----------------------------------------------------*/
+  
+/*Separator styling*/
+    
+    div.separator {
+      width: 100%;
+      height: 4px;
+      margin:0;
+      background-color: #bebebe;
+    }
+/* End Separator styling*/
+    
+/*----------------------------------------------------*/
+    
+/*Start footer section styling*/
+    
+    footer {
+      background: url("http://localhost/offcampus/img/footer_skin.jpg") repeat;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(105, 105, 105, 0.94);
+    }
+    #footer ul li {
+      font-family:lato;
+      font-size: .8em;
+      padding: 0;
+/*      border: 1px solid red;*/
+    }
+    #footer ul {
+/*      padding-top: 1em;*/
+/*      border: 1px solid white;*/
+    }
+    #footer h5  {
+      font-size: .8em;
+      padding-top: 3em;
+      font-weight: bold;
+    }
+    
+    @media screen and (max-width: 768px) {
+      #footer ul li, #footer h5 {
+        padding-left: 2em;
+        color: ghostwhite;
+      }
+      #footer ul li a {
+        color: ghostwhite;
+      }
+      #footer ul li a:hover {
+        color: ghostwhite;
+      }
+    }
+    
+    #footer a {
+      text-decoration: none;
+      color: #333232;
+    }
+    #footer a:hover {
+      color:beige;
+    }
+    div.ft-list {
+/*      border: 1px solid yellow;*/
+      padding: 0 !important;
+      text-align: left;
+    }
+    #copyright p  {
+      font-size: .6em;
+      margin-left: -1.7em !important;
+/*      border: 1px solid yellow*/
+    }
+
+    @media screen and (max-width: 768px){
+      hr {
+        width: 100% !important;
+      }
+      #copyright p {
+        margin-left: 0 !important;
+        color:#dadaff;
+      }
+    }
+    hr {
+      width: 87%;
+    }
+    @media screen and (max-width: 768px) {
+      #copyright p span {
+        font-size: 1.1em;
+        padding-left: 1em;
+      }
+      #copyright p span a {
+        text-decoration: underline;
+        color:#dadaff;
+      }
+    }
+    
+/*End Footer section styling*/
